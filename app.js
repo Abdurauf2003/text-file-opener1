@@ -39,6 +39,11 @@ window.addEventListener('DOMContentLoaded', function() {
             var successful = document.execCommand('copy');
             var message = successful ? 'Copied!' : 'Copy failed!';
             console.log(message);
+            if (successful == true) {
+                copyBtn.innerHTML = "Copied!";
+            } else {
+                copyBtn.innerHTML = "Copy failed!";
+            }
           } catch (err) {
             console.log('Unable to copy');
           }
