@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text File Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    pre {
+      white-space: pre-wrap;
+      border: 1px black solid;
+      width: 500px;
+      height: 250px;
+      overflow: auto;
+    }
+    .copy-btn {
+      display: block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <pre id="file-content"></pre>
+  <button class="copy-btn">Copy</button>
+
+  <script src="./app.js"></script>
+</body>
+</html>
